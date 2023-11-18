@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Dashboard - SB Admin</title>
+    <link href="https://cdn.datatables.net/1.13.7/css/dataTables.bootstrap5.min.css" rel="stylesheet" />
+    <link href="../../css/styles.css" rel="stylesheet" />
+    <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
+</head>
+
+<body class="sb-nav-fixed sb-sidenav-toggled">
+    <nav class="sb-topnav navbar navbar-expand navbar-light bg-light">
+        <!-- Navbar Brand-->
+        <a class="navbar-brand ps-3" href="../../index.html">Start Bootstrap</a>
+        <!-- Sidebar Toggle-->
+        <button class="btn btn-link btn-sm order-1 order-lg-0 me-4 me-lg-0" id="sidebarToggle" href="#!"><i
+                class="fas fa-bars"></i></button>
+
+        <ul class="navbar-nav ms-auto me-0 me-lg-4">
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    <span class="me-1 fw-bold d-none d-sm-inline">Name Here</span>
+                    <span class="d-inline d-sm-none"><i class="fas fa-user"></i></span>
+                </a>
+                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                    <li>
+                        <div class="m-3">
+                            <span class="fw-bold">Name</span><br>
+                            <small>Role</small>
+                        </div>
+                    </li>
+                    <li>
+                        <hr class="dropdown-divider" />
+                    </li>
+                    <li><a class="dropdown-item" href="#!">Logout</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+    <div id="layoutSidenav">
+        <div id="layoutSidenav_nav">
+            <nav class="sb-sidenav accordion sb-sidenav-light" id="sidenavAccordion">
+                <div class="sb-sidenav-menu">
+                    <div class="nav">
+                        <a class="nav-link" href="../../index.html">
+                            <div class="sb-nav-link-icon"><i class="fas fa-gauge-high"></i></div>
+                            Dashboard
+                        </a>
+                        <a class="nav-link" href="../../index-empty.html">
+                            <div class="sb-nav-link-icon"><i class="fas fa-gauge-simple-high"></i></div>
+                            Empty Dashboard
+                        </a>
+
+                        <div class="sb-sidenav-menu-heading">Data</div>
+                        <a class="nav-link active" href="#" data-bs-toggle="collapse" data-bs-target="#collapseLayouts"
+                            aria-expanded="false" aria-controls="collapseLayouts">
+                            <div class="sb-nav-link-icon"><i class="fas fa-list"></i></div>
+                            List
+                            <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+                        </a>
+                        <div class="collapsed" id="collapseLayouts" aria-labelledby="headingOne"
+                            data-bs-parent="#sidenavAccordion">
+                            <nav class="sb-sidenav-menu-nested nav">
+                                <a class="nav-link" href="default.html">Default</a>
+                                <a class="nav-link" href="with-image.html">With Image</a>
+                                <a class="nav-link" href="with-selectible-row.html">With Selectible Row</a>
+                                <a class="nav-link active" href="with-previous-info.html">With Previous Info</a>
+                                <a class="nav-link" href="with-state-info.html">With State Info</a>
+                                <a class="nav-link" href="with-filter.html">With Filter</a>
+                                <a class="nav-link" href="with-many-filter.html">With Many Filter</a>
+                                <a class="nav-link" href="with-inline-edit.html">With Inline Edit</a>
+                                <a class="nav-link" href="with-iline-select2-edit.html">With Inline Select2
+                                    Edit</a>
+                            </nav>
+                        </div>
+
+                        <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapsePages"
+                            aria-expanded="false" aria-controls="collapsePages">
+                            <div class="sb-nav-link-icon"><i class="fas fa-table-list"></i></div>
+                            Form
+                            <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+                        </a>
+                        <div class="collapse" id="collapsePages" aria-labelledby="headingOne"
+                            data-bs-parent="#sidenavAccordion">
+                            <nav class="sb-sidenav-menu-nested nav">
+                                <a class="nav-link" href="../form/default.html">Default</a>
+                                <a class="nav-link" href="../form/in-list.html">In-List</a>
+                                <a class="nav-link" href="../form/in-modal.html">In-Modal</a>
+                            </nav>
+                        </div>
+
+                        <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#threeSection"
+                            aria-expanded="false" aria-controls="collapsePages">
+                            <div class="sb-nav-link-icon"><i class="fas fa-info-circle"></i></div>
+                            Information
+                            <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+                        </a>
+                        <div class="collapse" id="threeSection" aria-labelledby="headingOne"
+                            data-bs-parent="#sidenavAccordion">
+                            <nav class="sb-sidenav-menu-nested nav">
+                                <a class="nav-link" href="../information/default.html">Default</a>
+                                <a class="nav-link" href="../information/in-modal.html">In-Modal</a>
+                            </nav>
+                        </div>
+
+                        <div class="sb-sidenav-menu-heading">Auth</div>
+                        <a class="nav-link" href="../../login.html">
+                            <div class="sb-nav-link-icon"><i class="fa-solid fa-right-to-bracket"></i></div>
+                            Login
+                        </a>
+                    </div>
+                </div>
+                <div class="sb-sidenav-footer">
+                    <div class="small">Good morning,</div>
+                    Name Here
+                </div>
+            </nav>
+        </div>
+        <div id="layoutSidenav_content">
+            <main>
+                <div class="container-fluid px-4">
+                    <div class="row mt-4">
+                        <div class="col-12">
+                            <div class="row">
+                                <div class="col-12 col-md-8">
+                                    <h3>
+                                        <button class="btn" onclick="history.back()">
+                                            <i class="fas fa-arrow-left"></i>
+                                        </button> List With Previous Info
+                                    </h3>
+                                </div>
+                                <div class="col-12 d-md-none"></div>
+                                <div class="col-12 col-md-4">
+                                    <button class="btn btn-primary text-uppercase fw-bold float-end">
+                                        <i class="fas fa-plus me-1"></i> Tambah
+                                    </button>
+                                </div>
+                            </div>
+
+                            <div class="row mt-3 mb-4 pt-2">
+                                <div class="col-12 col-md-3">
+                                    <div class="text-muted">
+                                        <h4 class="text-uppercase">Informatic Engineering</h4>
+
+                                        <small><strong>Faculty</strong><br> Faculty of Applied Science</small><br class="mb-2">
+                                        <small><strong>Established</strong><br> 22 Oktober 2011</small>
+
+
+                                    </div>
+                                </div>
+
+                                <div class="col-12 col-md-9 table-responsive">
+                                    <table id="main-datatable" class="table table-borderless table-striped mb-4 w-100">
+                                        <thead>
+                                            <tr>
+                                                <th>Student</th>
+                                                <th style="width: 100px;">Status</th>
+                                                <th class="text-center" style="width: 100px;">Options</th>
+                                            </tr>
+                                        </thead>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+
+            <footer class="py-4 bg-light mt-auto">
+                <div class="container-fluid px-4">
+                    <div class="d-flex align-items-center justify-content-between small">
+                        <div class="text-muted">Copyright &copy; Your Website 2022</div>
+                        <div>
+                            <a href="#">Privacy Policy</a>
+                            &middot;
+                            <a href="#">Terms &amp; Conditions</a>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        crossorigin="anonymous"></script>
+    <script src="../../js/scripts.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.0.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.datatables.net/1.13.7/js/jquery.dataTables.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.datatables.net/1.13.7/js/dataTables.bootstrap5.min.js" crossorigin="anonymous"></script>
+
+    <script>
+        let data = [];
+
+        async function getData() {
+            data = await fetch('./students.json')
+                .then((response) => response.json())
+                .then((json) => json);
+        }
+
+        getData();
+
+        window.onload = async () => {
+            await getData();
+            console.log(data);
+            initializeDatatable();
+        }
+
+        function initializeDatatable() {
+            let table = new DataTable('#main-datatable', {
+                data: data,
+                columnDefs: [{
+                    "defaultContent": "-",
+                    "targets": "_all"
+                },
+                {
+                    "targets": [0],
+                    "render": function (data, type, row, meta) {
+                        return `
+                            <h5 class="text-uppercase fw-bold">${row.name}</h5>
+                            <div class="text-muted">
+                                <small>${row.address}</small>
+                            </div>
+                        `;
+                    }
+                },
+                {
+                    "targets": [1],
+                    "render": function (data, type, row, meta) {
+                        const color = row.isActive ? "bg-success" : "bg-danger";
+                        const text = row.isActive ? "Active" : "Nonactive";
+
+                        return `
+                        <small class="badge ${color}">${text}</small>
+                        `;
+                    }
+                },
+                {
+                    "targets": [2],
+                    "render": function (data, type, row, meta) {
+                        return `<button class="btn btn-outline-danger btn-sm"><i class="fas fa-trash fa-fw"></i></button>`;
+                    },
+                    "createdCell": function (td, cellData, rowData, row, col) {
+                        $(td).css('text-align', 'center')
+                    }
+                }
+                ],
+            });
+        }
+    </script>
+</body>
+
+</html>
